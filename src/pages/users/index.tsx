@@ -16,6 +16,7 @@ import {
 import { Header } from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
 import { RiAddBoxLine, RiPencilLine } from "react-icons/ri";
+import { Pagination } from "@/components/pagination";
 
 export default function UserList() {
   return (
@@ -72,7 +73,56 @@ export default function UserList() {
                     fontSize="sm"
                     colorScheme="purple"
                     leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
-                   
+                  >
+                    Editar
+                  </Button>
+                </Td>
+              </Tr>
+              <Tr>
+                <Td px="6">
+                  <Checkbox colorScheme="pink" />
+                </Td>
+                <Td>
+                  <Box>
+                    <Text fontWeight="bold">Thainá</Text>
+                    <Text fontSize="sm" color="gray.300">
+                      thaina@gmail.com
+                    </Text>
+                  </Box>
+                </Td>
+                <Td>23 de maio, 2023</Td>
+                <Td>
+                  <Button
+                    as="a"
+                    size="sm"
+                    fontSize="sm"
+                    colorScheme="purple"
+                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
+                  >
+                    Editar
+                  </Button>
+                </Td>
+              </Tr>
+              <Tr>
+                <Td px="6">
+                  <Checkbox colorScheme="pink" />
+                </Td>
+                <Td>
+                  <Box>
+                    <Text fontWeight="bold">Thainá</Text>
+                    <Text fontSize="sm" color="gray.300">
+                      thaina@gmail.com
+                    </Text>
+                  </Box>
+                </Td>
+                <Td>23 de maio, 2023</Td>
+                <Td>
+                  <Button
+                    as="a"
+                    size="sm"
+                    fontSize="sm"
+                    colorScheme="purple"
+                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
                   >
                     Editar
                   </Button>
@@ -80,6 +130,9 @@ export default function UserList() {
               </Tr>
             </Tbody>
           </Table>
+          
+
+          <Pagination/>
         </Box>
       </Flex>
     </Box>
